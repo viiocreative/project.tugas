@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    string nama, sekolah;
+    int jumlah;
+
+    cout<<"Masukkan jumlah data: ";
+    cin>>jumlah;
+    cin.ignore();
+
+    for (int i = 1; i <= jumlah; i++) {
+        cout<<"\nData ke-"<<i<<endl;
+        cout<<"Masukkan nama    : ";
+        getline(cin, nama);
+        cout<<"Masukkan sekolah : ";
+        getline(cin, sekolah);
+        cout<<"Nama    : "<<nama<<endl;
+        cout<<"Sekolah : "<<sekolah<<endl;
+    }
+    return 0;
+}
